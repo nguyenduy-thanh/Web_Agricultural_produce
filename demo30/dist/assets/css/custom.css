@@ -12,6 +12,11 @@
     background-color: var(--fs-color-primary);
 }
 
+.custom-menu .menu-title{
+    color: #000!important;
+}
+
+
 .menu-header-top a{
     color: white;
     position: relative;
