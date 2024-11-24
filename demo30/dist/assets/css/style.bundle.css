@@ -31847,8 +31847,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .menu-state-bg .menu-item.hover:not(.here) > .menu-link:not(.disabled):not(.active):not(.here), .menu-state-bg .menu-item:not(.here) .menu-link:hover:not(.disabled):not(.active):not(.here) {
   transition: color 0.2s ease;
-  background-color: var(--bs-menu-link-bg-color-hover);
-  color: var(--bs-menu-link-color-hover);
+  color: #000;
 }
 .menu-state-bg .menu-item.hover:not(.here) > .menu-link:not(.disabled):not(.active):not(.here) .menu-title, .menu-state-bg .menu-item:not(.here) .menu-link:hover:not(.disabled):not(.active):not(.here) .menu-title {
   color: var(--bs-menu-link-color-hover);
@@ -47296,7 +47295,7 @@ body,
     position: fixed;
     left: 0;
     right: 0;
-    top: 80px;
+    top: 40px;
   }
   .menu-header-top-main {
     position: fixed;
