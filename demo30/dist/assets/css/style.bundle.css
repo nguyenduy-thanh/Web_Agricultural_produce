@@ -31847,7 +31847,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .menu-state-bg .menu-item.hover:not(.here) > .menu-link:not(.disabled):not(.active):not(.here), .menu-state-bg .menu-item:not(.here) .menu-link:hover:not(.disabled):not(.active):not(.here) {
   transition: color 0.2s ease;
-  color: #000;
+  background-color: var(--bs-menu-link-bg-color-hover);
+  color: var(--bs-menu-link-color-hover);
 }
 .menu-state-bg .menu-item.hover:not(.here) > .menu-link:not(.disabled):not(.active):not(.here) .menu-title, .menu-state-bg .menu-item:not(.here) .menu-link:hover:not(.disabled):not(.active):not(.here) .menu-title {
   color: var(--bs-menu-link-color-hover);
@@ -47266,6 +47267,16 @@ body,
     box-shadow: none;
   }
 }
+[data-kt-app-header-fixed-mobile=true] .app-header {
+  top: 0px; 
+}
+
+@media (min-width: 768px) {
+  [data-kt-app-header-fixed-mobile=true] .app-header {
+    top: 40px;
+  }
+}
+
 @media (max-width: 991.98px) {
   :root {
     --bs-app-header-height: 60px;
@@ -47295,7 +47306,6 @@ body,
     position: fixed;
     left: 0;
     right: 0;
-    top: 40px;
   }
   .menu-header-top-main {
     position: fixed;
@@ -47325,6 +47335,7 @@ body,
     box-shadow: none;
   }
 }
+
 .app-header-primary {
   transition: none;
   display: flex;
